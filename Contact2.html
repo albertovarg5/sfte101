@@ -14,8 +14,18 @@
         <p> If you would like to know which places to visit in Costa Rica this is the perfect website.</p>
         <nav>
             <a href="index.html">Home</a>
-            <a href="Assignment1.html">Assigments</a>
             <a href="About Me.html">About Me</a>
+            <select onchange="la(this.value)">
+                <option desabled selected>Assignments</option>
+                <option value="Assignment1.html">Assignment1</option>
+                <option value="Assignment2.html">Assignment2</option>
+                <script>
+                    function la(src)
+                    {
+                        window.location=src;
+                    }
+                </script>
+              </select>
             <a href="#">Form</a>
             <a href="Contact.html">Contact</a>
         </nav>
@@ -44,7 +54,6 @@
             <br>
             <input type="submit" value="Submit">
             </form>
-            
 
     <main>
         <section>
