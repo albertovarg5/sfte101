@@ -10,25 +10,79 @@
 <body>
     <header>
         <img src="1.jpg"alt="My Logo">
+        <style> 
+        *,
+        *:before,
+        *:after{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        nav{
+            height: 40vh;
+            width: 80vh;
+            min-width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color:rgb(61, 56, 56);
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            padding: 0 10px;
+        }
+        a:after{
+            content: "";
+            position: absolute;
+            background-color: rgb(12, 12, 157);
+            height: 3px;
+            width: 0; 
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+        a:hover{
+            color: black;
+        }
+        a:hover::after{
+            width: 100%;
+
+        }
+
+        img{width: 300px;px;
+        height: 350px;}
+        header{text-align: center;}
+        h1{text-align: center;}
+    body{background-color: white;color: black;}
+    h1 {color: white; text-align: center;}
+    p{text-align: center;}
+    img{text-align: center;}
+    .navbar{
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    </style>
         <h2>Welcome to my Website</h2>
         <p> If you would like to know which places to visit in Costa Rica this is the perfect website.</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="About Me.html">About Me</a>
-            <select onchange="la(this.value)">
-                <option desabled selected>Assignments</option>
-                <option value="Assignment1.html">Assignment1</option>
-                <option value="Assignment2.html">Assignment2</option>
-                <script>
-                    function la(src)
-                    {
-                        window.location=src;
-                    }
+            <a href="Assignment1.html">Assigment</a>
+
                 </script>
               </select>
             <a href="Forms.html">Form</a>
             <a href="Contact.html">Contact</a>
         </nav>
+
     </header>
         <form>
             <label>First Name:
@@ -66,11 +120,7 @@
         </section>
     </main>
 </body>
-<style>
-        img{width: 300px;px;
-        height: 350px;}
-        header{text-align: center;}
-        </style>
+
 
 
 </html>

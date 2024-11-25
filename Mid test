@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Code With Shijo - Home</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+background-colour: #f4f4f4;
+
+text-align center;
+
+margin: 0px;
+
+}
+
+
+header {
+
+background-color rgb(255, 255, 255);
+
+border-bottom: 2px solid #089352;
+
+padding 20px 0;
+
+}
+
+
+img {
+
+width 12%;
+
+height: auto;
+
+float: left;
+
+margin-left 20px;
+
+}
+
+
+h1 {
+
+color rgb(194, 84, 84);
+
+font-size: 2.5em;
+
+}
+
+
+p {
+
+font-size: 1.2em;
+
+color: #333
+
+}
+
+
+.navbar ul {
+
+list-style-type none;
+
+padding: 0;
+
+margin: 0;
+
+background-color: rgb(194, 84, 84);
+
+}
+
+
+.navbar li {
+
+float left;
+
+width: 20%;
+
+}
+
+
+.navbar a {
+
+color: #fff;
+
+text-decoration none;
+
+padding 15px;
+
+display: block;
+
+text-align: center;
+
+}
+
+
+.navbar a:hover {
+
+background-color: rgb(255, 255, 255);
+
+color rgb(194, 84, 84);
+
+border: #089352;
+
+}
+
+
+main {
+
+padding 20px;
+
+background-color: white;
+
+margin: 20px auto;
+
+width: 90%;
+
+max-width: 1200;
+
+}
+
+
+section {
+
+margin-bottom: 30px
+
+}
+
+
+h2 {
+
+color: #089352;
+
+font-size: 2em
+
+}
+
+
+article {
+
+margin-bottom 20px;
+
+}
+
+
+aside {
+
+background-color: #f9f9f9;
+
+padding 10px;
+
+margin-top: 10px;
+
+border-left: 5px solid;
+
+border-color: #089352;
+
+}
+
+
+footer {
+
+background-color rgb(194, 84, 84);
+
+color: white;
+
+padding: 20px;
+
+border-top: 2px solid #089352;
+
+position: fixed;
+
+width 100%;
+
+bottom;
+
+}
+
+
+footer p {
+
+margin 0;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<div>
+
+<img src="images/logo.png" alt="Code with Shijo Logo">
+
+</div>
+
+
+<div>
+
+<h1>Welcome to Code With Shijo<h1>
+
+<p>Ready or not, here we code!<p>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="index.html">Home</li>
+
+<li><a href="about-me.html">About Me</li>
+
+<li><a href="assignment1.html">Courses</li>
+
+<li><a href="contact.html">Contact</li>
+
+<li><a href="form.html">Book a Free Appointment</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+
+</header>
+
+<main>
+
+<section>
+
+<article>
+
+<h2>About My SFTE 101 Class</h2>
+
+<p>This page showcases the various topics I teach in my SFTE 101 class. The course covers the foundational web methodologies such as HTML and CSS.</p>
+
+<ul>
+
+<li>HTML Tags and Structure</li>
+
+<li>CSS Styling</li>
+
+<li>Responsive Web Design</li>
+
+</ul>
+
+
+<aside>
+
+<p><strong>Note:</strong> These are essential skills for any web developer. Make sure to practice each concept thoroughly!</p>
+
+</aside>
+
+
+<p>More content coming soon</p>
+
+</article>
+
+
+<article>
+
+<h2>My Latest Projects<h2>
+
+<p>Here are a few recent web development projects I’ve worked on:</p>
+
+<ul>
+
+<li>Portfolio Website<li>
+
+<li>E-commerce Platform</li>
+
+<li>Blogging Platform</li>
+
+</ul>
+
+<p>Check back regularly for updates!</p>
+
+</article>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>&copy 2024 Code With Shijo, All Rights, reserves<p>
+</footer>
+</body>
+</html>
