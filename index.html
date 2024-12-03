@@ -23,7 +23,6 @@
                     
 
             <a href="Forms.html"><li>Forms</li></a>
-            <a href="About Me.html"><li>About Me</li></a>
             <a href="Contact2.html"><li>Contact</li></a>
                 </ul>
                 </div>
@@ -73,6 +72,17 @@
                 display: block;
                 background-color: #101010;
             }
+            .navigation {
+            display: flex;
+        }
+        .navigation a {
+            padding: 10px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        .navigation a:hover {
+            color: lightgreen;}
  .inner header{
     width: 1000px;
     height: 100%;
@@ -122,7 +132,7 @@
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     position: relative;
-    right: 550px;
+    right: 600px;
 
 }
 
@@ -166,16 +176,18 @@
                 letter-spacing: 0.5px;
                 padding: 0 10px;
             }
-            a:after{
-                content: "";
-                position: absolute;
-                background-color: rgb(12, 12, 157);
-                height: 3px;
-                width: 0;
-                right: 550px;
-                bottom: -10px;
-                transition: 0.3s;
-            }
+            .navigation {
+            display: flex;
+        }
+        .navigation a {
+            padding: 10px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        .navigation a:hover {
+            color: lightgreen;
+        }
             a:hover{
                 color: lightgreen;
             }

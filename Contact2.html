@@ -1,126 +1,276 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
     <tittle></tittle>
-    <h1>Costa Rica Blog</h1>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon"
+    href="1.jpg"
+    type="image/icon type">
 
     
 </head>
-<body>
-    <header>
-        <img src="1.jpg"alt="My Logo">
-        <style> 
-        *,
-        *:before,
-        *:after{
-            padding:0;
-            margin: 0;
-            box-sizing: border-box;
+    
+        <body>
+        </div class="header">
+        <div class="inner header">
+            <h1>Costa<span>Rica</span></h1> 
+        </div>
+                <ul class="navigation">
+                    <a href="index.html"><li>Home</li></a>
+                    
 
-        }
-        nav{
-            height: 40vh;
-            width: 80vh;
-            min-width: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin: auto;
-        }
-        a{
-            position: relative;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            color:rgb(61, 56, 56);
-            font-size: 18px;
-            letter-spacing: 0.5px;
-            padding: 0 10px;
-        }
-        a:after{
-            content: "";
-            position: absolute;
-            background-color: rgb(12, 12, 157);
-            height: 3px;
-            width: 0; 
-            left: 0;
-            bottom: -10px;
-            transition: 0.3s;
-        }
-        a:hover{
-            color: black;
-        }
-        a:hover::after{
-            width: 100%;
+            <a href="Forms.html"><li>Forms</li></a>
+            <a href="Contact2.html"><li>Contact</li></a>
+                </ul>
+                </div>
+        
+                
 
-        }
-
-        img{width: 300px;px;
-        height: 350px;}
-        header{text-align: center;}
-        h1{text-align: center;}
-    body{background-color: white;color: black;}
-    h1 {color: white; text-align: center;}
-    p{text-align: center;}
-    img{text-align: center;}
-    .navbar{
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-        background-color: black;
-    }
-    </style>
-        <h2>Welcome to my Website</h2>
-        <p> If you would like to know which places to visit in Costa Rica this is the perfect website.</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="About Me.html">About Me</a>
-            <a href="Assignment1.html">Assigment</a>
-
-                </script>
-              </select>
-            <a href="Forms.html">Form</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
-
+       <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+       <input type="text" name="Last" placeholder="Last Name" autocomplete="off" required>
+       <input type="text" name="email" placeholder="Email Address" autocomplete="off" required>
+       <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+<button type="submit">Send message</button>
     </header>
-        <form>
-            <label>First Name:
-            <input type="text" name="firstName">
-            </label>
-            <br>
-            <br>
-            <label for="lastName">Last Name:</label>
-            <input id="lastName" type="text" name="lastName">
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email" placefolder="xxxxx@gmail.com">
-            <br>
-            <br>
-            <label for="telephone">Telephone:</label>
-            <input id="telephone" type="tel" name="telephone"placeholder="123 548 998">
-            <br>
-            <br>
-            <label for="yourMessage">Your Message:</label>
-            <textarea id="yourMessage" name="yourMessage"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-            </form>
+        <style>
+            *{
+                background-color: none;
+            }
+            h1 {
+                color: white;
+                padding-top: 10px;
+                text-align: center;
+                font-size: 60px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            input {
+                background-color: white;
+                width: 70%;
+                margin-left: 12%;
+                font-size: 20px;
+                padding: 16px 16px;
+                border-radius: 18px;
+                border-color: #101010;
+                margin-bottom: 20px;
+                vertical-align: bottom;
+                position: relative;
 
+            }
+            textarea {
+                background-color: white;
+                width: 70%;
+                margin-left: 12%;
+                font-size: 20px;
+                padding: 16px 16px;
+                border-radius: 10px;
+                border-color: #101010;
+                margin-bottom: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                vertical-align: bottom;
+            }
+            input:focus-within{
+                outline:none;
+                border: color #5bd183;
+                border-width: 3px;
+                vertical-align: bottom;
+            }
+            textarea:focus-within{
+                outline: none;
+                border-color: #5bd183;
+                border-width: 3px;
+                vertical-align: bottom;
+
+            }
+            button {
+                background-color: #5bd183;
+                border-radius: 20px;
+                border-color:#101010;
+                font-size: 22px;
+                padding: 10px 18px;
+                text-align: center;
+                display: flex;
+                margin: auto;
+                vertical-align: bottom;
+
+            }
+            button:hover{
+                opacity: 80%;
+                cursor: pointer;
+                vertical-align: bottom;
+
+            }
+           
+ .inner header{
+    width: 1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+    background-color:lightgreen;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+
+}
+.navigation a{
+    height: 120%;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    padding: 0px 20px;
+
+}
+.navigation a:last-child{
+    padding-right: 0;
+
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middl;
+    height: 70%;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: relative;
+    right: 600px;
+
+}
+
+            article{
+                text-align: center;
+                background-color:none;
+                border-style: ridge;
+                border-width: 3px;
+                color: white;
+                
+                
+            }
+           
+            .hide-bg{
+                mix-blend-mode: multiply;
+                filter: contrast(1);
+            }
+            *,
+            *:before,
+            *:after{
+                padding:0;
+                margin: 0;
+                box-sizing: border-box;
+
+            }
+            nav{
+                height: 40vh;
+                width: 80vh;
+                min-width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: auto;
+            }
+            a{
+                position: relative;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                color:rgb(61, 56, 56);
+                font-size: 18px;
+                letter-spacing: 0.5px;
+                padding: 0 10px;
+            }
+            a:after{
+                content: "";
+                position: absolute;
+                background-color: rgb(12, 12, 157);
+                height: 3px;
+                width: 0;
+                right: 550px;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: lightgreen;
+            }
+            a:hover::after{
+                width: 100%;
+
+            }
+
+            img{width: 300px;px;
+            height: 350px;}
+            header{text-align: center;}
+            h1{text-align: center;}
+        h1 {color: black; text-align: center;}
+        p{text-align: center;}
+        img{text-align: center;}
+        body{background-color: none;}
+        
+        .img_deg{
+            float: right;
+        }
+        #principal{
+            background-image: url(Costa\ rica\ background.jpg);
+            background-repeat: no-repeat;
+            background-position: 50px 25px;
+            background-position: 20% 10%;
+            background-position: left top;
+            background-position: left center;
+            background-position: center center;
+            height: 1800px;
+            background-attachment: fixed;
+            background: url(Costa\ rica\ background.jpg) no-repeat center center fixed ;
+            background-size: cover;
+        }
+        .pos_cen{
+            color:none;
+            position: absolute;
+            height: 50%;
+            width: 70%;
+            left: 15%;
+            top: 30%;
+            background-color:none;}
+
+      
+       
+        </style>
+
+        <div class="pos_cen">
+        
+    </div>
+        <nav>
+
+        
+        
+        
+        
+                
+        </nav>
+        </body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <main>
         <section>
             <article>
-                <header>
                     <h3>Website Recommendation</h3>
-                    <p> Instituto Costarricense de Turismo, last modification 13/9/2024</p>
-                </header>
+                     <p1>Instituto Costarricense de Turismo, last modification 13/9/2024</p1>
+                 </body>
             </article>
         </section>
     </main>
 </body>
-
-
 
 </html>
