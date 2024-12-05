@@ -36,7 +36,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div class="card-container">
             <div class="card">
-                <img src="Paquete.jpg">
+                <img src="house.webp" id="houseimage">
+                <img src="images (1).jpg" id="airplaneimage">
                 <div class="card-content">
                     <h3> Package</h3>
                     <ul>
@@ -46,6 +47,11 @@
                         <br>
                         <br>
                         <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    
                 
                     </ul>
                     <a href="package.html/package.html" class="btn">Order</a>
@@ -53,7 +59,10 @@
                 </div>
             </div>
             <div class="card">
-                <img src="Paquete.jpg">
+                <img src="house.webp" id="houseimage2">
+                <img src="images (1).jpg" id="airplaneimage2">
+                <img src="CAR.avif" id="carimage">
+                <img src="private beach.jpg" id="privatebeachimage">
                 <div class="card-content">
                     <h3>Premium</h3>
                     <ul>
@@ -73,7 +82,9 @@
                 </div>
             </div>
             <div class="card">
-                <img src="Paquete.jpg">
+                <img src="house.webp" id="houseimage2">
+                <img src="images (1).jpg" id="airplaneimage2">
+                <img src="CAR.avif" id="carimage2">
                 <div class="card-content">
                     <h3>Mega Package</h3>
                     <ul>
@@ -274,6 +285,35 @@
     height: 200px;
 
 }
+#houseimage{
+    width: 49%;
+    height: 200px;
+
+}
+#airplaneimage{
+    width: 49%;
+    height: 200px;
+}
+#houseimage2{
+    width: 49%;
+    height: 100px;
+}
+#airplaneimage2{
+    width: 49%;
+    height:100px;
+}
+#carimage{
+    width: 49%;
+    height: 100px;
+}
+#privatebeachimage{
+    width: 49%;
+    height: 100px;
+}
+#carimage2{
+    width: 80%;
+    height: 100px;
+}
 .card-content{
     padding: 16px;
     color:rgb(67, 64, 64);
@@ -305,6 +345,15 @@ margin-bottom: 8px;
     border-radius: 25rem;
     color: #fff;
     font-weight: 600;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card:active{
+    transform: scale(.97);
+}
+input:checked ~ label .card {
+    
 }
         </style>
 
