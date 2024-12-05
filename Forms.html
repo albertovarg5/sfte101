@@ -7,32 +7,48 @@
     <link rel="icon" href="1.jpg" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Styling for header */
+        /* Styling for header (same as Contact page) */
         .header {
             width: 100%;
-            height: 55px;
+            height: 80px; /* Smaller header height */
             background-color: #101010;
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            position: relative; /* Enable positioning for menu */
         }
-        .logo_container h1 {
+
+        .header h1 {
             font-family: 'Courier New', Courier, monospace;
             font-weight: 800;
+            font-size: 45px; /* Smaller text size */
+            margin: 0;
         }
+
+        .header h1 span {
+            font-size: 50px; /* Slightly larger span for visual interest */
+        }
+
         .navigation {
+            position: absolute;
+            bottom: 10px;  /* Position the menu at the bottom of the header */
+            right: 20px;
             display: flex;
+            gap: 20px; /* space between the links */
         }
+
         .navigation a {
-            padding: 10px;
-            color: white;
+            padding: 15px;
+            color: white; /* White text for menu */
             font-family: 'Courier New', Courier, monospace;
             text-decoration: none;
+            font-size: 18px;
         }
+
         .navigation a:hover {
-            color: lightgreen;
+            color: lightgreen; /* Hover effect */
         }
 
         /* Styling for form */
@@ -44,15 +60,18 @@
             border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
         }
+
         .form-container h2 {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .form-container label {
             font-size: 18px;
             margin: 10px 0;
             display: block;
         }
+
         .form-container input, .form-container textarea {
             width: 100%;
             padding: 10px;
@@ -61,6 +80,7 @@
             border: 1px solid #ccc;
             font-size: 16px;
         }
+
         .form-container input[type="submit"] {
             background-color: #333;
             color: white;
@@ -68,6 +88,7 @@
             cursor: pointer;
             font-size: 18px;
         }
+
         .form-container input[type="submit"]:hover {
             background-color: lightgreen;
         }
@@ -79,24 +100,75 @@
             margin: 0;
             padding: 0;
         }
-        h1 {
-            text-align: center;
-            color: white;
+
+        /* Footer styles */
+        footer {
             background-color: #101010;
-            padding: 20px 0;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: lightgreen;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            padding-top: 20px;
+        }
+
+        .socials a {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .socials a:hover {
+            color: lightgreen;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header and Navigation -->
+    <!-- Header and Navigation (same as Contact page) -->
     <div class="header">
         <div class="logo_container">
             <h1>Costa<span>Rica</span></h1>
         </div>
         <div class="navigation">
             <a href="index.html">Home</a>
-            <a href="Forms.html">Forms</a>
+            <a href="Forms.html">Feedback</a>
             <a href="Contact2.html">Contact</a>
         </div>
     </div>
@@ -118,8 +190,40 @@
         </form>
     </div>
 
-    <!-- Footer Section -->
-    
+    <!-- Footer Section (same as Contact page) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Costa Rica Blog</h3>
+                <p>Discover the beauty of Costa Rica through our travel blog, filled with insights, guides, and recommendations.</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Forms.html">Feedback</a></li>
+                    <li><a href="Contact2.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Email: info@costaricablog.com</li>
+                    <li>Phone: +506 123 4567</li>
+                    <li>Address: San José, Costa Rica</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Costa Rica Blog. All Rights Reserved | Designed by CostaRicaDev</p>
+        </div>
+    </footer>
 
 </body>
 </html>
