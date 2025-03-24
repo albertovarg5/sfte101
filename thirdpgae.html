@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,8 +34,8 @@
                     <li>Plane ticket</li>
                     <br><br><br><br><br><br>
                 </ul>
-                <br>
-                <a href="package.html/package.html" class="btn">Order</a>
+                <div class="price price-hidden" id="price1">$1000</div> <!-- Price for the package -->
+                <a href="#" class="btn" onclick="showPrice(1)">Order</a>
             </div>
         </div>
         <div class="card">
@@ -54,7 +55,8 @@
                     <li>Access to private beach</li>
                     <br><br><br>
                 </ul>
-                <a href="" class="btn">Order</a>
+                <div class="price price-hidden" id="price2">$2500</div> <!-- Price for the premium -->
+                <a href="#" class="btn" onclick="showPrice(2)">Order</a>
             </div>
         </div>
         <div class="card">
@@ -72,12 +74,24 @@
                     <br><br><br>
                     <br><br>
                 </ul>
-                <a href="" class="btn">Order</a>
+                <div class="price price-hidden" id="price3">$5000</div> <!-- Price for the mega package -->
+                <a href="#" class="btn" onclick="showPrice(3)">Order</a>
             </div>
         </div>
     </div>
 
-    <script src="package.html/package.html"></script>
+    <script>
+        // Function to show price when the "Order" button is clicked
+        function showPrice(cardNumber) {
+            var priceElement = document.getElementById('price' + cardNumber);
+            // Toggle the visibility of the price
+            if (priceElement.style.display === "none" || priceElement.style.display === "") {
+                priceElement.style.display = "block";
+            } else {
+                priceElement.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- Footer Section (optional) -->
     <footer>
@@ -137,7 +151,7 @@
             color: lightgreen;
         }
 
-        /* Highlighted Navigation Links */
+        
         .navigation li {
             display: inline-block;
             padding: 10px;
@@ -165,42 +179,41 @@
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
             margin: 20px;
         }
-        .card img {
-            width: 100%;
-            height: 200px;
-        }
+     
+        
         #houseimage2{
-            width: 49px%;
-            height: 100px;
-        }
-        #airplaneimage2{
-            width: 49%;
-            height: 100px;
-        }
-        #carimage{
-            width: 49%;
-            height: 100px;
-        }
-        #privatebeachimage{
-            width: 49%;
-            height: 100px;
-        }
-        #carimage2{
-            width: 49%;
-            height: 100px;
-        }
-        #houseimage3{
-            width: 49%;
-            height: 100px;
-        }
-        #houseimage{
-            width: 100%;
-            height: 100px;
-        }
-        #airplaneimage{
-            width: 100%;
-            height: 100px;
-        }
+    width: 49px%;
+    height: 100px;
+}
+#airplaneimage2{
+    width: 49%;
+    height: 100px;
+}
+#carimage{
+    width: 49%;
+    height: 100px;
+}
+#privatebeachimage{
+    width: 49%;
+    height: 100px;
+}
+#carimage2{
+    width: 49%;
+    height: 100px;
+}
+#houseimage3{
+    width: 49%;
+    height: 100px;
+}
+#houseimage{
+    width: 100%;
+    height: 100px;
+}
+#airplaneimage{
+    width: 100%;
+    height: 100px;
+}
+       
         .card-content {
             padding: 16px;
             color: rgb(67, 64, 64);
@@ -231,6 +244,18 @@
             text-align: center; /* Center the button */
         }
 
+        /* Price Styling */
+        .price {
+            font-size: 20px;
+            color: #28a745;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .price-hidden {
+            display: none;
+        }
+
         /* Footer Styling */
         footer {
             background-color: #101010;
@@ -259,31 +284,3 @@
         }
         .footer-column ul li {
             margin-bottom: 8px;
-        }
-        .footer-column ul li a {
-            text-decoration: none;
-            color: white;
-        }
-        .footer-column ul li a:hover {
-            color: lightgreen;
-        }
-        .social-media {
-            display: flex;
-            gap: 15px;
-        }
-        .social-icon {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-        }
-        .social-icon:hover {
-            color: lightgreen;
-        }
-        .footer-bottom {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
-        }
-    </style>
-</body>
-</html>

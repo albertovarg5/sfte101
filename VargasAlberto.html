@@ -1,0 +1,42 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Tracking System</title>
+    <link rel="stylesheet" href="VargasAlbertoA8.css">
+</head>
+<body>
+
+    <h1>Employee Tracking System</h1>
+
+    <div class="clock-container">
+        <h2 id="clock">00:00:00</h2>
+        <button id="clock-in">Clock In</button>
+        <button id="clock-out">Clock Out</button>
+    </div>
+
+    <form id="employee-form">
+        <input type="text" id="name" placeholder="Employee Name" required>
+        <input type="text" id="position" placeholder="Position" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="employee-list">
+        </tbody>
+    </table>
+
+    <script src="VargasalbertoA9.js"></script>
+</body>
+</html>
