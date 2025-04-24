@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student GPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="work.css">
+</head>
+<body>
+    <h2>Student GPA Calculator</h2>
+    <label>Student Name: <input type="text" id="studentName"></label>
+    <br><br>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Score (out of 100)</th>
+        </tr>
+        <tr><td>Math</td><td><input type="number" id="math" min="0" max="100"></td></tr>
+        <tr><td>Science</td><td><input type="number" id="science" min="0" max="100"></td></tr>
+        <tr><td>English</td><td><input type="number" id="english" min="0" max="100"></td></tr>
+        <tr><td>Social Science</td><td><input type="number" id="socialScience" min="0" max="100"></td></tr>
+        <tr><td>P.E.</td><td><input type="number" id="pe" min="0" max="100"></td></tr>
+        <tr><td>Spanish</td><td><input type="number" id="spanish" min="0" max="100"></td></tr>
+    </table>
+    <br>
+    <button onclick="calculateGPA()">Calculate</button>
+    <h3>Total: <span id="total"></span></h3>
+    <h3>Percentage: <span id="percentage"></span>%</h3>
+    <h3>GPA: <span id="gpa"></span></h3>
+    
+    <h3>Registered Students:</h3>
+<ul id="studentList">
+    <!-- List of students will appear here -->
+</ul>
+
+<h3 id="classGPA">Class GPA: N/A</h3>
+<br>
+<h4 id="classPercentage">Class Percentage:</h4>
+<p id="belowAveragePercentage">Below Average: N/A</p>
+    <script src="work.js"></script>
+</body>
+</html>
